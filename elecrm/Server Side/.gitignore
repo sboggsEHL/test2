@@ -1,0 +1,25 @@
+# Node.js dependencies
+/node_modules
+
+# Build output
+/dist
+
+# Vite cache
+/.vite
+
+# Logs
+*.log
+/logs
+
+# Environment variables
+.env
+
+# VSC specific files
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo

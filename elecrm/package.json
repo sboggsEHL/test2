@@ -1,0 +1,81 @@
+{
+  "name": "reelevatedcrm",
+  "version": "1.0.0",
+  "main": "src/electron/electron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "vite --force --mode production",
+    "client:local": "cross-env NODE_ENV=development vite --force --mode development",
+    "server": "npm run dev --prefix \"Server Side\"",
+    "dev": "concurrently -k -n \"CLIENT,SERVER\" -c \"blue.bold,green.bold\" \"npm run client:local\" \"npm run server\"",
+    "start": "cross-env NODE_ENV=development concurrently -k -n \"CLIENT,SERVER\" -c \"blue.bold,green.bold,yellow.bold\" \"npm run client:local\" \"npm run server\"",
+    "build": "tsc && vite build",
+    "electron": "cross-env NODE_ENV=production electron src/electron/electron.js",
+    "electron:build": "electron-builder",
+    "electron:dev": "concurrently -k -n \"VITE,ELECTRON\" -c \"blue.bold,green.bold\" \"vite --force --mode production\" \"cross-env NODE_ENV=development electron src/electron/electron.js\"",
+    "softphone": "concurrently -k -n \"VITE,SOFTPHONE\" -c \"blue.bold,green.bold\" \"npm run client\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron ./src/electron/electron-softphone.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^31.2.1",
+    "electron-builder": "^24.1.0",
+    "electron-devtools-installer": "^3.2.0",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4",
+    "wait-on": "^7.0.1"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "@heroicons/react": "^2.1.5",
+    "@react-input/mask": "^1.2.11",
+    "@signalwire-community/react": "^1.4.2",
+    "@signalwire/js": "3.28.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-table": "^7.7.20",
+    "axios": "^1.7.9",
+    "date-fns": "^3.6.0",
+    "date-fns-tz": "^3.2.0",
+    "dotenv": "^16.4.5",
+    "lucide-react": "^0.436.0",
+    "react": "^18.3.1",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.1",
+    "react-table": "^7.8.0",
+    "socket.io-client": "^4.7.5"
+  },
+  "overrides": {
+    "glob": "^10.3.10",
+    "inflight": "^2.0.0",
+    "rimraf": "^5.0.5"
+  },
+  "build": {
+    "appId": "com.yourapp.id",
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "src/electron/**/*"
+    ],
+    "directories": {
+      "buildResources": "build",
+      "output": "release"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  }
+}

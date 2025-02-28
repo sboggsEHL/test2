@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",               // Use CommonJS module system
+    "moduleResolution": "node",         // Node-style module resolution
+    "esModuleInterop": true,            // Enable interoperability between CommonJS and ES modules
+    "skipLibCheck": true,               // Skip checking type declaration files
+    "target": "ES2020",                 // Compile to ES2020
+    "strict": true,                     // Enable strict type checking
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",                // Output directory for compiled files
+    "rootDir": "./src",                // Root directory for TypeScript source files
+    "allowJs": true,                   // Allow JavaScript files to be compiled
+    "checkJs": false,                  // Disables type checking for JavaScript files
+    "noEmit": false                    // Ensures that output files are generated
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*.ts"]
+}

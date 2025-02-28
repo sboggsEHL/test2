@@ -1,0 +1,7 @@
+@import './Theme.css'; /* Ensure this is at the top */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+

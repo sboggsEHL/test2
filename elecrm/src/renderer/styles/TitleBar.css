@@ -1,0 +1,24 @@
+/* src/renderer/styles/TitleBar.css */
+/* .title-bar {
+    background-color: var(--title-bar-bg);
+    color: var(--title-text-color);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--title-bar-height);
+  } */
+  
+  /* .title-bar-button.theme-switch {
+    font-size: 20px; 
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--title-text-color);
+  } */
+  
+  /* .title-bar-button.theme-switch:hover {
+    background-color: var(--title-button-hover-bg);
+  } */
+  

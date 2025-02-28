@@ -1,0 +1,10 @@
+/* src/renderer/styles/Home.css */
+.chart {
+  background-color: var(--main-content-bg);
+  padding: 1rem;
+  box-shadow: var(--shadow-lg);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

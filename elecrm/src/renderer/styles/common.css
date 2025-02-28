@@ -1,0 +1,114 @@
+/* src/renderer/styles/common.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* main { 
+    margin: 0;
+  } */
+  
+/* Custom scrollbar styles */
+.hide-scrollbar {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Set width of scrollbar */
+  background-color: transparent; /* Background color of scrollbar */
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Scrollbar color when not scrolling */
+  border-radius: 10px;
+}
+
+.hide-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Scrollbar color when hovering */
+}
+
+/* Animation for the orange stroke */
+.draw-orange {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawOrange 5s linear infinite;
+}
+
+/* Animation for the blue stroke */
+.draw-blue {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawBlue 5s linear infinite;
+}
+
+@keyframes drawOrange {
+  0%, 50% {
+    stroke-dashoffset: 1000;
+  }
+  50%, 100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawBlue {
+  0%, 50% {
+    stroke-dashoffset: 0;
+  }
+  50%, 100% {
+    stroke-dashoffset: 1000;
+  }
+}

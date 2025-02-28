@@ -1,0 +1,15 @@
+export const AppRoutes = {
+  Home: "/home",
+  Pipeline: "/pipeline",
+  LookupTool: "/lookup",
+  SharkTank: "/sharktank",
+  Login: "/login",
+  Softphone: "/softphone",
+  Admin: "/admin",
+  AdminUsers: "/admin/users",
+  AdminIntegrations: "/admin/integrations",
+  AdminNotifications: "/admin/notifications",
+  AdminCallLogs: "/admin/callLogs",
+  AdminTeams: "/admin/teams",
+  Default: "/",
+} as const;

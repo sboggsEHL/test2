@@ -1,0 +1,45 @@
+/* Light mode variables */
+:root {
+  --color-bg: #f5f5f5;
+  --color-text: #333333;
+  --color-primarytext: #333333;
+  --color-chartBg: #ff993330;
+  --color-titleBarBg: #FF9933; /*Company orange*/
+  --color-titleText: #FFFFFF;
+  --color-titleButtonBg: #3399FF; /*Company blue*/
+  --color-titleButtonHoverBg: #66B2FF;
+  --color-titleButtonActiveBg: #0077E6;
+  --color-sidebarBg: #FFF5E6;
+  --color-sidebarButtonBg: #3399FF;
+  --color-sidebarButtonHoverBg: #88DDAA;
+  --color-mainContentBg: #FFFFFF;
+  --color-altContentBg: #e5e7eb;
+  --color-accent1: #FF6B6B;
+  --color-accent2: #4ECDC4;
+  --color-accent3: #FFA07A;
+  --color-tableRowGray: #efefef;
+  --color-borderGray: #475569;
+}
+
+/* Dark mode variables */
+[data-theme='dark'] {
+  --color-bg: #121620;
+  --color-text: #E0E0E0;
+  --color-primaryText: #E0E0E0;
+  --color-chartBg: #1E2433;
+  --color-titleBarBg: #1E2433;
+  --color-titleText: #FFFFFF;
+  --color-titleButtonBg: #FF9933;
+  --color-titleButtonHoverBg: #ffae00;
+  --color-titleButtonActiveBg: #E68A00;
+  --color-sidebarBg: #0D1117;
+  --color-sidebarButtonBg: #3399FF;
+  --color-sidebarButtonHoverBg: #66B2FF;
+  --color-mainContentBg: #161B22;
+  --color-altContentBg: #334155;
+  --color-accent1: #FF6B6B;
+  --color-accent2: #4ECDC4;
+  --color-accent3: #FFA07A;
+  --color-tableRowGray: #1f2937;
+  --color-borderGray: #cbd5e1;
+}

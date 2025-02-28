@@ -1,0 +1,38 @@
+export interface CombinedLead {
+  id: number;
+  global_id?: string;
+  lead_id?: string;
+  tu_pk?: string;
+  first_name?: string;
+  middle_name?: string;
+  last_name?: string;
+  suffix?: string;
+  email?: string;
+  dob?: Date | null;
+  veteran?: boolean;
+  credit?: string;
+  marital_status?: string;
+  first_name_b2?: string;
+  last_name_b2?: string;
+  address?: string;
+  city?: string;
+  state?: string;
+  zip_code?: string;
+  home_phone?: string;
+  cell_phone?: string;
+  property_use?: string;
+  property_type?: string;
+  loan_purpose?: string;
+  mortgage_balance?: number;
+  second_mortgage_balance?: number;
+  desired_loan_amount?: number;
+  estimated_value?: number;
+  lead_source?: string;
+  ulid?: string;
+  status: string;
+  assigned_to?: string;
+  assigned_at?: Date;
+  updated_at: Date;
+  created_at: Date;
+  exported: boolean;
+}
